@@ -1,21 +1,24 @@
+body{
+  background: linear-gradient(-45deg, #8ddad5, #00cdac, #00b09b, #96c93d);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;;
+}
+
 header {
     height: 60px;
     text-align: center;
   }
   
   main {
-    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
     height: 900px;
     text-align: center;
   }
   
   h1 {
-    height: 38px;
     font-family: Roboto;
-    font-size: 32px;
+    font-size: 100px;
     font-weight: 300;
     letter-spacing: 0.6px;
-    text-align: center;
     color: #1f233e;
     padding-top: 40px;
   }
@@ -34,10 +37,10 @@ header {
   }
   
   #input {
-    width: 219px;
-    height: 37px;
-    border-radius: 3.2px;
-    border: solid 0.8px #1f233e;
+    width: 250px;
+    height: 50px;
+    border-radius: 1000px;
+    border: solid 13px #1f233e;
     background-color: inherit;
     display: block;
     margin: auto;
@@ -45,12 +48,12 @@ header {
     font-size: 14px;
     letter-spacing: 0.2px;
     text-align: center;
-    color: #ffffff;
+    color: black;
   }
   
   #shorten {
-    width: 91px;
-    height: 37px;
+    width: 100px;
+    height: 50px;
     border-radius: 3.2px;
     border: solid 0.8px #1f233e;
     background-color: inherit;
@@ -59,19 +62,20 @@ header {
     font-size: 14px;
     letter-spacing: 0.2px;
     text-align: center;
-    color: #ffffff;
+    color: black;
     margin-right: -3px;
+    border-radius: 5px;
   }
   
   #shorten:hover {
     background-color: #1f233e;
     border: solid 0.8px #4a4a4a;
-    color: #0087de;
+    color: white;
     cursor: pointer;
   }
   
   #shorten:active {
-    background-color: #ffffff;
+    background-color: black;
     border: solid 0.8px #4a4a4a;
     color: #1f233e;
     cursor: pointer;
@@ -80,14 +84,29 @@ header {
   #responseField {
     min-width: 191px;
     min-height: 120px;
-    border: solid 2px #ffffff;
+    border: solid 4px black;
     margin: auto;
     margin-top: 25px;
     font-family: Source Sans Pro;
     font-size: 16px;
     letter-spacing: 0.2px;
     text-align: center;
-    color: #ffffff;
+    color: black;
     overflow: auto;
+    border-radius: 5px;
 }
-  
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+p{
+  color: black;
+}
